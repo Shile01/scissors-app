@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  font-family: gilroy, sans-serif, Avenir, Helvetica, Arial;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: 'gilroy';
+  src: url(../assets/fonts/Gilroy/Gilroy-Light.ttf);
+}
+@font-face {
+  font-family: 'gilroy-bold';
+  src: url(../assets/fonts/Gilroy/Gilroy-ExtraBold.ttf);
+}
+
+@layer base {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-semibold;
+  }
+  h1 {
+    @apply text-4xl lg:text-4xl md:text-6xl font-[gilroy];
+  }
+  h2 {
+    @apply lg:text-2xl text-2xl font-[gilroy];
+  }
+  /* button {
+    @apply shadow-xl shadow-gray-400 rounded-xl uppercase bg-gradient-to-r from-[#5651e5] to-[#709dff] text-white;
+  } */
+}
